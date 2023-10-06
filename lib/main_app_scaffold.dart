@@ -35,7 +35,7 @@ class MainAppScaffold extends StatefulWidget {
 }
 
 class _MainAppScaffoldState extends State<MainAppScaffold> {
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
+
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,6 @@ class _MainAppScaffoldState extends State<MainAppScaffold> {
                     : Focus(
                       autofocus: true,
                       child: Scaffold(
-                          key: _scaffoldKey,
                           drawer: useTabs ? _SideMenu(showPageButtons: false) : null,
                           appBar: useTabs ? AppBar(backgroundColor: Colors.blue.shade300) : null,
                           body: Stack(children: [

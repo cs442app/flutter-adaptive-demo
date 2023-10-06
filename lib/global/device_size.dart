@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 enum ScreenType { Handset, Tablet, Desktop, Watch }
 
 class FormFactor {
+  // Screen size breakpoints
   static double desktop = 900;
   static double tablet = 600;
   static double handset = 300;
